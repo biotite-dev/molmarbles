@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "molmarbles"
+version = "0.1.0"
+description = "A bridge between Biotite and OpenMM"
+readme = "README.rst"
+license = "BSD-3-Clause"
+authors = ["Patrick Kunzmann <padix.key@gmail.com>"]
+homepage = "https://github.com/biotite-dev/molmarbles"
+repository = "https://github.com/biotite-dev/molmarbles"
+keywords = [
+    "Bioinformatics",
+    "Structural biology",
+    "MD simulation"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+biotite = ">=0.36"
+# OpenMM is currently not distributed via PyPI
+#openmm = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry_core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
