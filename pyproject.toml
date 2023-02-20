@@ -2,7 +2,7 @@
 name = "molmarbles"
 version = "0.1.0"
 description = "A bridge between Biotite and OpenMM"
-readme = "README.rst"
+readme = "README.md"
 license = "BSD-3-Clause"
 authors = ["Patrick Kunzmann <padix.key@gmail.com>"]
 homepage = "https://github.com/biotite-dev/molmarbles"

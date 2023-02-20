@@ -1,69 +1,63 @@
-Molmarbles
-==========
+# Molmarbles
 
-.. image:: https://raw.githubusercontent.com/biotite-dev/molmarbles/master/logo.svg
-    :width: 300
-    :align: center
-    :alt: Molmarbles
+
+![Molmarbles](https://raw.githubusercontent.com/biotite-dev/molmarbles/master/logo.svg)
 
 This small package allows conversion between structures objects from
-`Biotite <https://www.biotite-python.org/>`_
-(``AtomArray`` and ``AtomArrayStack``) and ``System``, ``Topology``,
-``Context`` or ``State`` objects from `OpenMM <https://openmm.org/>`_.
+[Biotite](https://www.biotite-python.org/)
+(`AtomArray` and `AtomArrayStack`) and `System`, `Topology`,
+`Context` or `State` objects from [OpenMM](https://openmm.org/).
 This allows for data preparation, MD simulation and trajectory analysis from
 the same script without intermediate files.
 
-.. note::
+> **Note**
+> The development of this package is work in progress.
+> The API will probably change in the future.
 
-    The development of this package is work in progress.
-    The API will probably change in the future.
 
-
-Installation
-------------
+## Installation
 
 *Molmarbles* can be installed via *pip*, either from PyPI...
 
-.. code-block:: console
-
-    $ pip install molmarbles
+```shell
+$ pip install molmarbles
+```
 
 or a local repository clone.
 
-.. code-block:: console
-
-    $ pip install .
+```shell
+$ pip install .
+```
 
 Note that *OpenMM* must also be installed for *Molmarbles* to work.
 *OpenMM* is not distributed via *PyPI* and must installed via *Conda*.
 
-.. code-block:: console
+```shell
+$ conda install -c conda-forge openmm
+```
 
-    $ conda install -c conda-forge openmm
 
+## Usage
 
-Usage
------
-
-``AtomArray`` and ``AtomArrayStack`` objects can be converted to the respective
+`AtomArray` and `AtomArrayStack` objects can be converted to the respective
 *OpenMM* objects with
 
-- to_system()
-- to_topology()
+- `to_system()`
+- `to_topology()`
 
 and vice versa with
 
-- from_topology()
-- from_context()
-- from_states()
-- from_state()
+- `from_topology()`
+- `from_context()`
+- `from_states()`
+- `from_state()`
 
 Detailed description of parameters and return values is provided by the
 respective
-`docstring <https://github.com/biotite-dev/molmarbles/blob/master/molmarbles/__init__.py>`.
+[docstring](https://github.com/biotite-dev/molmarbles/blob/master/molmarbles/__init__.py>).
 
-Example
--------
+
+## Example
 
 A short MD simulation of lysozyme
 
@@ -142,20 +136,12 @@ A short MD simulation of lysozyme
     # Remove segmentation over periodic boundary
     trajectory = struc.remove_pbc(trajectory)
 
-Visualization with `Ammolite <https://ammolite.biotite-python.org/>`_ and
-`PyMOL <https://pymol.org/>`_
+Visualization with [Ammolite](https://ammolite.biotite-python.org/) and
+[PyMOL](https://pymol.org/)
 
-.. raw:: html
+![Animation of the trajectory](https://github.com/biotite-dev/molmarbles/blob/master/example.mp4)
 
-    <video width="800" height="800" autoplay>
-        <source src="https://github.com/biotite-dev/molmarbles/blob/master/example.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> 
 
-.. image:: https://github.com/biotite-dev/molmarbles/blob/master/example.mp4
-    :alt: Animation of the trajectory
-
-Testing
--------
+## Testing
 
 *Molmarbles* uses *pytest* for running its tests.
