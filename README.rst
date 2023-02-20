@@ -145,6 +145,13 @@ A short MD simulation of lysozyme
 Visualization with `Ammolite <https://ammolite.biotite-python.org/>`_ and
 `PyMOL <https://pymol.org/>`_
 
+.. raw:: html
+
+    <video width="800" height="800" autoplay>
+        <source src="https://github.com/biotite-dev/molmarbles/blob/master/example.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
+
 .. image:: https://github.com/biotite-dev/molmarbles/blob/master/example.mp4
     :alt: Animation of the trajectory
 
