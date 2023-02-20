@@ -1,7 +1,7 @@
 Molmarbles
 ==========
 
-.. image:: https://raw.githubusercontent.com/biotite-dev/fastpdb/master/logo.svg
+.. image:: https://raw.githubusercontent.com/biotite-dev/molmarbles/master/logo.svg
     :width: 300
     :align: center
     :alt: Molmarbles
@@ -145,7 +145,7 @@ A short MD simulation of lysozyme
 Visualization with `Ammolite <https://ammolite.biotite-python.org/>`_ and
 `PyMOL <https://pymol.org/>`_
 
-.. image:: https://raw.githubusercontent.com/biotite-dev/fastpdb/master/example.mp4
+.. image:: https://github.com/biotite-dev/molmarbles/blob/master/example.mp4
     :alt: Animation of the trajectory
 
 Testing
