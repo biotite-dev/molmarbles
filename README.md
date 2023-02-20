@@ -139,7 +139,8 @@ A short MD simulation of lysozyme
 Visualization with [Ammolite](https://ammolite.biotite-python.org/) and
 [PyMOL](https://pymol.org/)
 
-https://github.com/biotite-dev/molmarbles/blob/master/example.mp4
+
+https://user-images.githubusercontent.com/28051833/220104497-ecf2cdb2-5e1d-4c22-ae27-ae4ca59ebb8e.mp4
 
 
 ## Testing
