@@ -54,7 +54,7 @@ and vice versa with
 
 Detailed description of parameters and return values is provided by the
 respective
-[docstring](https://github.com/biotite-dev/molmarbles/blob/master/molmarbles/__init__.py>).
+[docstring](https://github.com/biotite-dev/molmarbles/blob/master/molmarbles/__init__.py).
 
 
 ## Example
