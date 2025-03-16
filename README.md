@@ -1,3 +1,5 @@
+**The content of this package has been integrated into `biotite.interface.openmm`**
+
 # Molmarbles
 
 
